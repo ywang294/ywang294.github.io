@@ -7,7 +7,7 @@
       "selected": 1,
       "award": "",
       "topic": "Conference",
-      "links": { # }
+      "links": { "pdf": "https://openreview.net/forum?id=danmbBB8vs#discussion" }
     },
     {
       "title": "Robust Transfer Learning With Side Information",
@@ -16,7 +16,7 @@
       "selected": 1,
       "award": "",
       "topic": "Conference",
-      "links": { # }
+      "links": { "pdf": "https://openreview.net/forum?id=H0uBv4CQLp#discussion" }
     },
     {
       "title": "Robust Constrained Markov Games: Multi-Agent Decision-Making under Model Uncertainty and Constraints",
@@ -25,7 +25,7 @@
       "selected": 1,
       "award": "",
       "topic": "Conference",
-      "links": { # }
+      "links": { "pdf": "https://openreview.net/forum?id=6t42kjY2gd#discussion" }
     },
     {
       "title": "Scaling Online Distributionally Robust Reinforcement Learning: Sample-Efficient Guarantees with General Function Approximation",
