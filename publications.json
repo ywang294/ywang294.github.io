@@ -199,15 +199,6 @@
       "links": { "pdf": "#" }
     },
     {
-      "title": "Robust Transfer Learning with Side Information",
-      "authors": ["Akram S. Awad", "Shihab Ahmed", "Yue Wang", "George K. Atia"],
-      "venue": "Preprint, 2026",
-      "selected": 1,
-      "award": "",
-      "topic": "Preprint",
-      "links": { "pdf": "https://arxiv.org/abs/2603.07921" }
-    },
-    {
       "title": "RLAF: Reinforcement Learning from Automaton Feedback",
       "authors": ["Mahyar Alinejad", "Alvaro Velasquez", "Yue Wang", "George Atia"],
       "venue": "Preprint, 2025",
