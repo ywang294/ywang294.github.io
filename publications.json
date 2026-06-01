@@ -1,6 +1,33 @@
 {
   "publications": [
     {
+      "title": "Stationary Robust Mean-Field Games under Model Mismatches",
+      "authors": ["Yue Wang"],
+      "venue": "Uncertainty in Artificial Intelligence (UAI), 2026",
+      "selected": 1,
+      "award": "",
+      "topic": "Conference",
+      "links": { # }
+    },
+    {
+      "title": "Robust Transfer Learning With Side Information",
+      "authors": ["Akram Awad", "Shihab Ahmed", "George K. Atia", "Yue Wang"],
+      "venue": "Uncertainty in Artificial Intelligence (UAI), 2026",
+      "selected": 1,
+      "award": "",
+      "topic": "Conference",
+      "links": { # }
+    },
+    {
+      "title": "Robust Constrained Markov Games: Multi-Agent Decision-Making under Model Uncertainty and Constraints",
+      "authors": ["Ningkang Chang", "Chenyu Xu", "Ziying Jia", "Yue Wang", "Sihong He"],
+      "venue": "Uncertainty in Artificial Intelligence (UAI), 2026",
+      "selected": 1,
+      "award": "",
+      "topic": "Conference",
+      "links": { # }
+    },
+    {
       "title": "Scaling Online Distributionally Robust Reinforcement Learning: Sample-Efficient Guarantees with General Function Approximation",
       "authors": ["Debamita Ghosh", "George K. Atia", "Yue Wang"],
       "venue": "International Conference on Machine Learning (ICML), 2026",
