@@ -7,7 +7,7 @@
       "selected": 1,
       "award": "",
       "topic": "Conference",
-      "links": { "pdf": "#" }
+      "links": { "pdf": "" }
     },
     {
       "title": "Robust Transfer Learning With Side Information",
@@ -16,7 +16,7 @@
       "selected": 1,
       "award": "",
       "topic": "Conference",
-      "links": { "pdf": "#" }
+      "links": { "pdf": "" }
     },
     {
       "title": "Robust Constrained Markov Games: Multi-Agent Decision-Making under Model Uncertainty and Constraints",
@@ -25,7 +25,7 @@
       "selected": 1,
       "award": "",
       "topic": "Conference",
-      "links": { "pdf": "#" }
+      "links": { "pdf": "" }
     },
     {
       "title": "Scaling Online Distributionally Robust Reinforcement Learning: Sample-Efficient Guarantees with General Function Approximation",
