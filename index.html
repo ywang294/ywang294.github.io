@@ -67,38 +67,51 @@
             </section>
 
             <section class="card">
-                <h2>News</h2>
-                <ul class="news-list">
-    <li>
-        <span class="date">2026.06</span>
-        <span>Three papers are accepted by UAI 2026! </span>
-    </li>
-                    <li>
-        <span class="date">2026.05</span>
-        <span>Four papers are accepted by ICML 2026! Congratulations to Debamita and Zach! </span>
-    </li>
-                    <li>
-        <span class="date">2026.04</span>
-        <span>I received the Amazon Research Award (25 Fall) under the program of 'Build on Trainium: Responsible AI'! </span>
-    </li>
-                    <li>
-        <span class="date">2026.01</span>
-        <span>Zain and Debamita's paper is accepted by ICLR 2026; Another two papers are accepted by ICASSP and AISTATS. Congratulations to the students and collaborators!
-</span>
-    </li>
-    <li>
-        <span class="date">2026.01</span>
-        <span>Our first paper on LLM fine-tuning is accepted by AAMAS 2026 as an Extended Abstract.
-</span>
-    </li>
-    <li>
-        <span class="date">2026.01</span>
-        <span>Two papers are accepted by AAAI 2026 (accepted rate 17.6%, and one is selected as Oral). Congratulations to Shihab and Debamita, and thanks to our collaborators!
-</span>
-    </li>
+    <h2>News</h2>
+    
+    <ul class="news-list" id="auto-news-list">
+        <li><span>2026.06</span><span>Three papers (on large-scale/constained robust MARL) are accepted by UAI 2026!</span></li>
+        <li><span>2026.05</span><span>Four papers are accepted by ICML 2026! Congratulations to Debamita and Zach!</span></li>
+        <li><span>2026.04</span><span>I received the Amazon Research Award (25 Fall) under the program of 'Build on Trainium: Responsible AI'!</span></li>
+        <li><span>2026.01</span><span>Zain and Debamita's paper is accepted by ICLR 2026; Another two papers are accepted by ICASSP and AISTATS. Congratulations to the students and collaborators!</span></li>
+        <li><span>2026.01</span><span>Two papers are accepted by AAAI 2026 (accepted rate 17.6%, and one is selected as Oral). Congratulations to Shihab and Debamita, and thanks to our collaborators!</span></li>
+        <li><span>2026.01</span><span>Our first paper on LLM fine-tuning is accepted by AAMAS 2026 as an Extended Abstract.</span></li>
+        </ul>
+</section>
 
-</ul>
-            </section>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const list = document.getElementById('auto-news-list');
+    if (!list) return; // 如果找不到列表就退出
+    
+    const items = Array.from(list.children);
+    const MAX_VISIBLE = 5; // 这里设置你要展示的条数
+    
+    if (items.length > MAX_VISIBLE) {
+        // 自动创建折叠框和按钮
+        const details = document.createElement('details');
+        const summary = document.createElement('summary');
+        summary.textContent = 'Show more news...';
+        // 保持之前好看的 GitHub 蓝字样式
+        summary.style.cssText = 'cursor: pointer; color: #0969da; font-weight: bold; margin-top: 10px; list-style-position: inside;';
+        details.appendChild(summary);
+        
+        // 创建用来装旧新闻的新 ul
+        const hiddenUl = document.createElement('ul');
+        hiddenUl.className = 'news-list'; // 继承你原本的样式
+        hiddenUl.style.marginTop = '10px';
+        
+        // 核心魔法：把第 6 条及以后的 li 自动挪到折叠框里
+        items.slice(MAX_VISIBLE).forEach(item => {
+            hiddenUl.appendChild(item);
+        });
+        
+        details.appendChild(hiddenUl);
+        // 把做好的折叠框插到原来的列表下面
+        list.parentNode.insertBefore(details, list.nextSibling);
+    }
+});
+</script>
 
         </div>
     </div>
