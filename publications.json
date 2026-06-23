@@ -7,7 +7,7 @@
       "selected": 1,
       "award": "",
       "topic": "Conference",
-      "links": { "pdf": "" }
+      "links": { "pdf": "https://arxiv.org/abs/2606.22579" }
     },
     {
       "title": "Robust Transfer Learning With Side Information",
@@ -46,8 +46,8 @@
       "links": { "pdf": "https://arxiv.org/abs/2508.03136" }
     },
     {
-      "title": "A Finite-Sample Analysis of Distributionally Robust Average-Reward Reinforcement Learning",
-      "authors": ["Z. Roch", "C. Zhang", "G. Atia", "Y. Wang"],
+      "title": "Model-Free Robust Average-Reward Reinforcement Learning with Sample Complexity Analysis",
+      "authors": ["Z. Roch", "G. Atia", "Y. Wang"],
       "venue": "International Conference on Machine Learning (ICML), 2026",
       "selected": 1,
       "award": "",
