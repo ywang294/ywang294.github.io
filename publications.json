@@ -1,6 +1,15 @@
 {
   "publications": [
     {
+      "title": "Fully Decentralized Cooperative Multi-Agent Reinforcement Learning Under Model Uncertainty",
+      "authors": ["Ximing Sun", "Sihong He", "Yue Wang"],
+      "venue": "IEEE International Workshop on Machine Learning for Signal Processing (IEEE MLSP), 2026",
+      "selected": 1,
+      "award": "",
+      "topic": "Conference",
+      "links": { "pdf": "" }
+    },
+    {
       "title": "Stationary Robust Mean-Field Games under Model Mismatches",
       "authors": ["Yue Wang"],
       "venue": "Conference on Uncertainty in Artificial Intelligence (UAI), 2026",
