@@ -1,5 +1,14 @@
 {
   "publications": [
+      {
+      "title": "Online Learning in Stackelberg Security Games with Adaptive Attacker Sequences and Time-Varying Attack Intensities",
+      "authors": ["Guanda Chen", "Shiheng Zhang", "Yue Wang", "Yiding Ji"],
+       "venue": "Preprint, 2026",
+      "selected": 1,
+      "award": "",
+      "topic": "Preprint",
+      "links": { "pdf": "https://arxiv.org/abs/2608.01703" }
+    },
     {
       "title": "Fully Decentralized Cooperative Multi-Agent Reinforcement Learning Under Model Uncertainty",
       "authors": ["Ximing Sun", "Sihong He", "Yue Wang"],
