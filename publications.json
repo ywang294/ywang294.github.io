@@ -1,6 +1,14 @@
 {
   "publications": [
-      {
+    {
+      "title": "Online Security Learning in Cooperative Multi-Agent Systems under Hidden Byzantine Attacks",
+      "authors": ["Ximing Sun", "Yue Wang"],
+       "venue": "Preprint, 2026",
+      "selected": 1,
+      "award": "",
+      "topic": "Preprint",
+      "links": { "pdf": "https://arxiv.org/abs/2608.06520" }
+    },{
       "title": "Online Learning in Stackelberg Security Games with Adaptive Attacker Sequences and Time-Varying Attack Intensities",
       "authors": ["Guanda Chen", "Shiheng Zhang", "Yue Wang", "Yiding Ji"],
        "venue": "Preprint, 2026",
