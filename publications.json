@@ -5,7 +5,7 @@
       "authors": ["Ximing Sun", "Yue Wang"],
        "venue": "Preprint, 2026",
       "selected": 1,
-      "award": "Oral",
+      "award": "",
       "topic": "Preprint",
       "links": { "pdf": "https://arxiv.org/abs/2608.06520" }
     },{
@@ -22,7 +22,7 @@
       "authors": ["Ximing Sun", "Sihong He", "Yue Wang"],
       "venue": "IEEE International Workshop on Machine Learning for Signal Processing (IEEE MLSP), 2026",
       "selected": 1,
-      "award": "",
+      "award": "oral",
       "topic": "Conference",
       "links": { "pdf": "" }
     },
