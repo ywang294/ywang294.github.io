@@ -1,5 +1,14 @@
 {
   "publications": [
+     {
+      "title": "Robust Nash Alignment under Preference Uncertainty",
+      "authors": ["Shihab Ahmed", "Debamita Ghosh", "David Tang", "Alvaro Velasquez", "Yue Wang"],
+       "venue": "Conference on Neural Information Processing Systems (NeurIPS), 2026",
+      "selected": 1,
+      "award": "",
+      "topic": "Conference",
+      "links": { "pdf": "" }
+    },
     {
       "title": "Online Security Learning in Cooperative Multi-Agent Systems under Hidden Byzantine Attacks",
       "authors": ["Ximing Sun", "Yue Wang"],
