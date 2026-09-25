@@ -11,7 +11,7 @@
       "links": { "pdf": "https://arxiv.org/abs/2609.28792" }
     },{
       "title": "Robust Nash Alignment under Preference Uncertainty",
-      "authors": ["Shihab Ahmed", "Debamita Ghosh", "David Tang", "Alvaro Velasquez", "Yue Wang"],
+      "authors": ["Shihab Ahmed", "Debamita Ghosh", "David Tang", "Yudan Wang", "Alvaro Velasquez", "Yue Wang"],
        "venue": "Conference on Neural Information Processing Systems (NeurIPS), 2026",
       "selected": 1,
       "award": "",
