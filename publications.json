@@ -16,7 +16,7 @@
       "selected": 1,
       "award": "",
       "topic": "Conference",
-      "links": { "pdf": "" }
+      "links": { "pdf": "https://arxiv.org/abs/2610.00715" }
     },
     {
       "title": "Online Security Learning in Cooperative Multi-Agent Systems under Hidden Byzantine Attacks",
@@ -69,7 +69,7 @@
       "selected": 1,
       "award": "",
       "topic": "Conference",
-      "links": { "pdf": "" }
+      "links": { "pdf": "https://proceedings.mlr.press/v337/chang26a.html" }
     },
     {
       "title": "Scaling Online Distributionally Robust Reinforcement Learning: Sample-Efficient Guarantees with General Function Approximation",
@@ -96,7 +96,7 @@
       "selected": 1,
       "award": "",
       "topic": "Conference",
-      "links": { "pdf": "https://arxiv.org/abs/2505.12462" }
+      "links": { "pdf": "https://openreview.net/forum?id=GMIHHrJ6Wp" }
     },
     {
       "title": "Beyond Buffer Limits: Energy-Based Data Reassembly for Continual Learning",
