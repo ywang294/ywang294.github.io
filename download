@@ -1,0 +1,11 @@
+# LaTeX build files and the generated list (the Action regenerates it)
+*.aux
+*.log
+*.out
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.bbl
+*.blg
+CV.pdf
+publications.tex

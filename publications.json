@@ -190,6 +190,7 @@
     },
     {
       "title": "Non-Asymptotic Analysis for Single-Loop (Natural) Actor-Critic With Compatible Function Approximation",
+      "me": 1,
       "authors": ["Y. Wang", "Y. Wang", "Y. Zhou", "S. Zou"],
       "venue": "International Conference on Machine Learning (ICML), 2024",
       "selected": 1,
@@ -289,6 +290,7 @@
     },
     {
       "title": "Model-Free Robust Reinforcement Learning with Sample Complexity Analysis",
+      "me": 2,
       "authors": ["Y. Wang", "S. Zou", "Y. Wang"],
       "venue": "Conference on Uncertainty in Artificial Intelligence (UAI), 2024",
       "selected": 0,
@@ -316,6 +318,7 @@
     },
     {
       "title": "Data-Driven Robust Multi-Agent Reinforcement Learning",
+      "me": 1,
       "authors": ["Y. Wang", "Y. Wang", "Y. Zhou", "A. Velasquez", "S. Zou"],
       "venue": "IEEE International Workshop on MACHINE LEARNING FOR SIGNAL PROCESSING (MLSP), 2022",
       "selected": 0,

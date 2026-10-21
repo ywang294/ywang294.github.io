@@ -1,0 +1,379 @@
+%
+%Academic CV LaTeX Template
+% Author: Dubasi Pavan Kumar
+% LinkedIn: https://www.linkedin.com/in/im-pavankumar/
+% License: MIT
+%
+% For errors, suggestions, or improvements, please contact:
+% Email: pavankumard.pg19.ma@nitp.ac.in
+%
+% CONTENT ADAPTED FROM cv.tex 
+%
+
+
+\documentclass[a4paper,11pt]{article}
+\usepackage{latexsym} 
+\usepackage{xcolor} 
+\usepackage{float} 
+\usepackage{ragged2e} 
+\usepackage[empty]{fullpage} 
+\usepackage{wrapfig} 
+\usepackage{lipsum} 
+\usepackage{tabularx} 
+\usepackage{titlesec} 
+\usepackage{geometry} 
+\usepackage{marvosym} 
+\usepackage{verbatim} 
+\usepackage{enumitem} 
+\usepackage{fancyhdr} 
+\usepackage{multicol} 
+\usepackage{graphicx} 
+\usepackage{cfr-lm} 
+\usepackage[T1]{fontenc} 
+\usepackage{fontawesome5} 
+\newcommand{\myname}[1]{\underline{\textbf{#1}}}
+% --- Packages added from cv.tex ---
+\usepackage{bibentry} 
+\usepackage{natbib} 
+% ---------------------------------
+
+% Color definitions
+\definecolor{darkblue}{RGB}{0,0,139} 
+
+% Page layout
+\setlength{\multicolsep}{0pt} 
+\pagestyle{fancy} 
+\fancyhf{} % clear all header and footer fields 
+\fancyfoot{}
+\fancyfoot[R]{\footnotesize Last updated \today} 
+\renewcommand{\headrulewidth}{0pt} 
+\renewcommand{\footrulewidth}{0pt} 
+\geometry{left=1.4cm, top=0.8cm, right=1.2cm, bottom=1cm} 
+\setlength{\footskip}{5pt} % Addressing fancyhdr warning 
+
+% Hyperlink setup (moved after fancyhdr to address warning)
+\usepackage[hidelinks]{hyperref} 
+\hypersetup{
+    colorlinks=true, 
+    linkcolor=darkblue, 
+    filecolor=darkblue, 
+    urlcolor=darkblue, 
+}
+
+% Custom box settings
+\usepackage[most]{tcolorbox} 
+\tcbset{
+    frame code={}, 
+    center title, 
+    left=0pt, 
+    right=0pt, 
+    top=0pt, 
+    bottom=0pt, 
+    colback=gray!20, 
+    colframe=white, 
+    width=\dimexpr\textwidth\relax, 
+    enlarge left by=-2mm, 
+    boxsep=4pt, 
+    arc=0pt,outer arc=0pt, 
+}
+
+% URL style
+\urlstyle{same} 
+
+% Text alignment
+\raggedright 
+\setlength{\tabcolsep}{0in} 
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}] 
+
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item{
+    \textbf{#1}{\hspace{0.5mm}#2 \vspace{-0.5mm}}
+  }
+} 
+
+\newcommand{\resumePOR}[3]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1}\hspace{0.3mm}#2 & \textit{\small{#3}} 
+    \end{tabular*}
+    \vspace{-2mm}
+} 
+
+\newcommand{\resumeSubheading}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#4}} \\
+        \textit{\footnotesize{#3}} &  \footnotesize{#2}\\
+    \end{tabular*}
+    \vspace{-2.4mm}
+} 
+
+\newcommand{\resumeProject}[4]{
+\vspace{0.5mm}\item
+  
+  \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#3}} \\
+        \footnotesize{\textit{#2}} & \footnotesize{#4}
+    \end{tabular*}
+    \vspace{-2.4mm}
+} 
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}} 
+
+\renewcommand{\labelitemi}{$\vcenter{\hbox{\tiny$\bullet$}}$} 
+\renewcommand{\labelitemii}{$\vcenter{\hbox{\tiny$\circ$}}$} 
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,labelsep=1mm]} 
+\newcommand{\resumeHeadingSkillStart}{\begin{itemize}[leftmargin=*,itemsep=1.7mm, rightmargin=2ex]} 
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*,labelsep=1mm,itemsep=0.5mm]} 
+
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{2mm}} 
+\newcommand{\resumeHeadingSkillEnd}{\end{itemize}\vspace{-2mm}} 
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-2mm}} 
+\newcommand{\cvsection}[1]{%
+\vspace{2mm}
+\begin{tcolorbox}
+    \textbf{\large #1}
+\end{tcolorbox}
+    \vspace{-4mm}
+} 
+
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}% 
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}% 
+\newcolumntype{C}{>{\centering\arraybackslash}X}% 
+
+% Commands for icon sizing and positioning
+\newcommand{\socialicon}[1]{\raisebox{-0.05em}{\resizebox{!}{1em}{#1}}} 
+\newcommand{\ieeeicon}[1]{\raisebox{-0.3em}{\resizebox{!}{1.3em}{#1}}} 
+
+% Font options
+\newcommand{\headerfonti}{\fontfamily{phv}\selectfont} % Helvetica-like (similar to Arial/Calibri) 
+\newcommand{\headerfontii}{\fontfamily{ptm}\selectfont} % Times-like (similar to Times New Roman) 
+\newcommand{\headerfontiii}{\fontfamily{ppl}\selectfont} % Palatino (elegant serif) 
+\newcommand{\headerfontiv}{\fontfamily{pbk}\selectfont} % Bookman (readable serif) 
+\newcommand{\headerfontv}{\fontfamily{pag}\selectfont} % Avant Garde-like (similar to Trebuchet MS) 
+\newcommand{\headerfontvi}{\fontfamily{cmss}\selectfont} % Computer Modern Sans Serif 
+\newcommand{\headerfontvii}{\fontfamily{qhv}\selectfont} % Quasi-Helvetica (another Arial/Calibri alternative) 
+\newcommand{\headerfontviii}{\fontfamily{qpl}\selectfont} % Quasi-Palatino (another elegant serif option) 
+\newcommand{\headerfontix}{\fontfamily{qtm}\selectfont} % Quasi-Times (another Times New Roman alternative) 
+\newcommand{\headerfontx}{\fontfamily{bch}\selectfont} 
+\begin{document}
+\headerfontiii 
+% Header
+\begin{center}
+    {\Huge\textbf{Yue Wang}} 
+\end{center}
+\vspace{-6mm}
+
+\begin{center}
+    \small{
+    +1 (716) 930-2523 | ]
+    \href{mailto:yue.wang@ucf.edu}{yue.wang@ucf.edu} | 
+    \href{https://ywang294.github.io}{https://ywang294.github.io} 
+    }
+\end{center}
+\vspace{-6mm}
+
+% Removed template social links [cite: 6] as they are not in cv.tex
+
+\begin{center}
+    \small{
+    Assistant Professor - Department of Electrical \& Computer Engineering - University of Central Florida 
+    }
+\end{center}
+
+\vspace{-4mm}
+
+\section{\textbf{Research Interests}}
+\vspace{1mm}
+\small{
+\resumeItemListStart
+    \item Theoretical and algorithmic foundations of reinforcement learning
+    \item Game theory and multi-agent systems 
+    \item Alignment and large language models 
+\resumeItemListEnd
+}
+\vspace{-2mm}
+
+
+
+\section{\textbf{Experience}}
+\vspace{-0.4mm}
+  \resumeSubHeadingListStart
+  \resumeSubheading
+      {University of Central Florida}{}{Department of Electrical and Computer Engineering}{Sep. 2023 - Present} 
+      Assistant Professor
+     
+  \resumeSubHeadingListEnd
+\vspace{-6mm}
+
+\section{\textbf{Education}}
+\vspace{-0.4mm}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{University at Buffalo, the State University of New York}{USA} 
+{Ph.D. in Electrical Engineering}{Sep. 2019 - Aug. 2023} 
+\resumeItemListStart
+\item Advisor: Prof. Shaofeng Zou 
+\resumeItemListEnd
+
+\resumeSubheading
+{Nanjing University}{China} 
+{B.S. in Mathematics}{Sep. 2015 - Aug. 2019} 
+
+\resumeSubHeadingListEnd
+\vspace{-6mm}
+
+\section{\textbf{Publications}}
+\vspace{-0.4mm}
+% Generated from the website's publications.json by build_publications.py.
+\input{publications.tex}
+\vspace{2mm}
+
+\section{\textbf{Grants and Projects}}
+\vspace{-0.4mm}
+\textbf{Funded Projects} 
+\resumeSubHeadingListStart
+\resumeProject
+  {Distributionally Robust Approaches to Transfer Learning}
+  {Defense Advanced Research Projects Agency (DARPA), Co-PI, 40\% Credit, \$1.2M}
+  {July 2024 – June 2027}
+  {}
+% \resumeItemListStart
+%   \item Role: Co-Principal Investigator (Co-PI), 40\% Credit 
+%   \item Total Budget: \$1.2M 
+% \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\textbf{Pending Projects}
+\resumeSubHeadingListStart
+\resumeProject
+  {Theoretical Foundations of Long-Term Performance Optimization under Uncertainty}
+  {NSF, Sole PI, \$600K}
+  {PENDING}
+  {}
+
+\resumeProject
+  {RI: Toward Practical Robust Reinforcement Learning}
+  {NSF, Lead PI, 65\% Credit, \$860K}
+  {PENDING}
+  {}
+
+
+\resumeProject
+  {Collaborative Research: Scaling Up Robust Multi-Agent Systems}
+  % : Bridging the Gap between Theoretical Foundations and Practical Applications}
+  {NSF, Lead PI, 60\% Credit, \$300K}
+  {PENDING}
+  {}
+
+
+\resumeProject
+  {CAREER: Emerging Directions in Distributionally Robust Reinforcement Learning}
+  {NSF, Sole PI, \$600K}
+  {PENDING}
+  {}
+
+
+\resumeProject
+  {Game-Theoretic Frameworks for Pluralistic Alignment}
+  {NSF, Sole PI, \$510K}
+  {PENDING}
+  {}
+
+  \resumeProject
+  {CIF: Towards Robust Multi-Agent Systems under Model Uncertainty}
+  {NSF, Sole PI, \$500K}
+  {PENDING}
+  {}
+
+
+\resumeSubHeadingListEnd
+\vspace{-6mm}
+
+
+
+
+\section{\textbf{Honors and Awards}}
+\vspace{-0.4mm}
+\resumeHeadingSkillStart
+
+\resumeSubItem{}{AAAI Distinguished Paper Award, 2023}
+
+\resumeSubItem{}{ICML Student Travel Award, 2022}
+  
+  
+\resumeSubItem{}{Nanjing University, Outstanding Student in Basic Sciences, 2016-2019}
+
+
+\resumeSubItem{}{Nanjing University, the People's Scholarship in China, 2016, 2017}
+  
+\resumeHeadingSkillEnd
+\vspace{2mm}
+
+\section{\textbf{Service}}
+\vspace{-0.4mm}
+ \resumeHeadingSkillStart
+ \resumeSubItem{NSF Panelist}{}
+  \resumeSubItem{Conference Area Chair: }{ICRL, UAI, NeurIPS} 
+  \resumeSubItem{Action Editor: }{TMLR} 
+  \resumeSubItem{Reviewer: }{ICML, NeurIPS, ICLR, AISTATS, UAI, TMLR, JMLR,  IEEE Transactions on Neural Networks and Learning Systems, IEEE Transactions on Pattern Analysis and Machine Intelligence, IEEE Transactions on Signal Processing, IEEE Transactions on Information Theory, Journal of Artificial Intelligence Research, IEEE Transactions on Power Systems, Operational Research} 
+  \resumeSubItem{Guest Speaker: }{UCF STEM Summer Institutes-Math Explorations Track, 2025} 
+ \resumeHeadingSkillEnd
+\vspace{2mm}
+
+\section{\textbf{Teaching}}
+\vspace{-0.4mm}
+\resumeSubHeadingListStart
+\resumePOR{EEL 6938: Mathematic Foundations for Machine Learning}{}{2025, 26 Spring} 
+\resumePOR{EEL 4810: Introduction to Deep Learning}{}{2024 Spring} 
+\resumePOR{EEL 3021: Introduction to Probability}{}{2023,24,25 Fall} 
+\resumePOR{EE 178: Digital Principles}{(TA)}{2021 Spring} 
+\resumePOR{EE 408: Senior Seminar}{(TA)}{2020 Fall} 
+\resumePOR{EE 459/559: Big Data Analysis}{(TA)}{2020 Spring} 
+\resumePOR{EE 631: Detection and Estimation}{(TA)}{2019 Fall} 
+\resumeSubHeadingListEnd
+\vspace{-6mm}
+
+% \section{\textbf{References}}
+% \vspace{-0.2mm}
+% \small{
+% \begin{enumerate}[leftmargin=*,labelsep=2mm]
+% \item \textbf{Prof. Yingbin Liang} [cite: 43]
+%    Associate Professor [cite: 43]
+%    Electrical and Computer Engineering, The Ohio State University [cite: 43]
+%    Email: \href{mailto:liang.889@osu.edu}{liang.889@osu.edu} [cite: 43]
+%    Phone: +1 609-658-1330 [cite: 43]
+
+% \item \textbf{Prof. Venugopal V. Veeravalli} [cite: 44]
+%    Henry Magnuski Professor [cite: 44]
+%    Electrical and Computer Engineering \& Statistics, University of Illinois at Urbana-Champaign [cite: 44]
+%    Email: \href{mailto:vvv@illinois.edu}{vvv@illinois.edu} [cite: 44]
+%    Phone: +1 217-333-0144 [cite: 44]
+
+% \item \textbf{Prof. Shlomo Shamai (Shitz)} [cite: 45]
+%    Distinguished Professor [cite: 45]
+%    Electrical Engineering, Technion-Israel Institute of Technology [cite: 45]
+%    Email: \href{mailto:sshlomo@ee.technion.ac.il}{sshlomo@ee.technion.ac.il} [cite: 45]
+%    Phone: +972 4-829-4713 [cite: 45]
+
+% \item \textbf{Prof. H. Vincent Poor} [cite: 46]
+%    Michael Henry Strater University Professor of Electrical Engineering [cite: 46]
+%    Engineering and Applied Science, Princeton University [cite: 46]
+%    Email: \href{mailto:poor@princeton.edu}{poor@princeton.edu} [cite: 46]
+%    Phone: +1 609-258-1816 [cite: 46]
+   
+% \item \textbf{Prof. Alejandro D. Dom\'inguez-Garc\'ia} [cite: 47]
+% 	Associate Professor [cite: 47]
+% 	Electrical and Computer Engineering, University of Illinois at Urbana-Champaign [cite: 47]
+% 	Email: \href{mailto:aledan@ILLINOIS.EDU}{aledan@ILLINOIS.EDU} [cite: 47]
+% \end{enumerate}
+% }
+
+\end{document}

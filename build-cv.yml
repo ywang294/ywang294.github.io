@@ -1,0 +1,47 @@
+# Rebuilds CV.pdf whenever publications.json or the CV source changes.
+# Output: CV.pdf at the site root, served at https://ywang294.github.io/CV.pdf
+name: Build CV
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "publications.json"
+      - "cv/**"
+      - ".github/workflows/build-cv.yml"
+  workflow_dispatch:        # lets you run it by hand from the Actions tab
+
+permissions:
+  contents: write           # needed to commit CV.pdf back to the repo
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Generate publication list from publications.json
+        run: python cv/build_publications.py
+
+      - name: Compile CV
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: CV.tex
+          working_directory: cv
+
+      - name: Commit CV.pdf if it changed
+        run: |
+          cp cv/CV.pdf CV.pdf
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add CV.pdf
+          if git diff --cached --quiet; then
+            echo "CV.pdf unchanged"
+          else
+            git commit -m "Rebuild CV.pdf from publications.json"
+            git push
+          fi
