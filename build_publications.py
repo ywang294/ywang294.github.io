@@ -102,6 +102,13 @@ def main():
         warnings.append(f'unknown "topic" for "{t}"; it was left out')
     OUT.write_text("\n".join(lines) + "\n", encoding="utf-8")
     print(f"wrote {OUT}: " + ", ".join(f"{k} {v}" for k, v in counts.items()))
+    # Single-file copy with the list pasted in (for Overleaf or sharing).
+    cv = OUT.parent / "CV.tex"
+    if cv.exists():
+        full = cv.read_text(encoding="utf-8").replace(r"\input{publications.tex}", "\n".join(lines))
+        full = "% AUTO-GENERATED single-file copy of CV.tex. Edit CV.tex, not this file.\n" + full
+        (OUT.parent / "CV_full.tex").write_text(full, encoding="utf-8")
+        print(f"wrote {OUT.parent / 'CV_full.tex'}")
     for w in warnings:
         print("WARNING:", w)
 

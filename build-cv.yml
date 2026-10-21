@@ -1,5 +1,8 @@
 # Rebuilds CV.pdf whenever publications.json or the CV source changes.
-# Output: CV.pdf at the site root, served at https://ywang294.github.io/CV.pdf
+# Outputs (committed back to the repo):
+#   CV.pdf               - served at https://ywang294.github.io/CV.pdf
+#   cv/publications.tex  - generated publication list
+#   cv/CV_full.tex       - single-file LaTeX of the whole CV (Overleaf-ready)
 name: Build CV
 
 on:
@@ -33,15 +36,15 @@ jobs:
           root_file: CV.tex
           working_directory: cv
 
-      - name: Commit CV.pdf if it changed
+      - name: Commit CV.pdf and the generated LaTeX if they changed
         run: |
           cp cv/CV.pdf CV.pdf
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add CV.pdf
+          git add CV.pdf cv/publications.tex cv/CV_full.tex
           if git diff --cached --quiet; then
-            echo "CV.pdf unchanged"
+            echo "CV unchanged"
           else
-            git commit -m "Rebuild CV.pdf from publications.json"
+            git commit -m "Rebuild CV from publications.json"
             git push
           fi

@@ -1,4 +1,4 @@
-# LaTeX build files and the generated list (the Action regenerates it)
+# LaTeX build files
 *.aux
 *.log
 *.out
@@ -8,4 +8,3 @@
 *.bbl
 *.blg
 CV.pdf
-publications.tex
