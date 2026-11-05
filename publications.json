@@ -2,6 +2,14 @@
   "publications": [
     
          {
+      "title": "Near-Minimax Sample Complexity for Multi-Objective Reinforcement Learning under Generative Models",
+      "authors": ["Yue Wang"],
+       "venue": "Preprint, 2026",
+      "selected": 1,
+      "award": "",
+      "topic": "Preprint",
+      "links": { "pdf": "https://arxiv.org/abs/2611.05562" }
+    }, {
       "title": "Vector Bellman Theory for Multichain Robust Average-Reward Markov Decision Processes",
       "authors": ["Yue Wang", "George Atia"],
        "venue": "Preprint, 2026",
